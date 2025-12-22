@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedang Maintenance - Travel Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary-orange: #FF6600;
+            --dark-black: #1A1A1A;
+            --pure-white: #FFFFFF;
+            --soft-gray: #F4F4F4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--pure-white);
+            color: var(--dark-black);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        /* Animasi Pesawat Terpental Halus */
+        .icon-box {
+            font-size: 80px;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h1 span {
+            color: var(--primary-orange);
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-orange);
+            color: var(--pure-white);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-black);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Dekorasi Background */
+        .bg-element {
+            position: absolute;
+            font-size: 20vw;
+            color: rgba(0, 0, 0, 0.03);
+            z-index: 1;
+            user-select: none;
+        }
+
+        .plane-bg { top: -50px; right: -50px; transform: rotate(-15deg); }
+        .globe-bg { bottom: -50px; left: -50px; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-element plane-bg">✈</div>
+    <div class="bg-element globe-bg">🌍</div>
+
+    <div class="container">
+        <div class="icon-box">
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.7.5-1.2z"></path>
+            </svg>
+        </div>
+        
+        <h1>Kami Sedang <span>Bersiap</span></h1>
+        <p>Website kami sedang dalam peningkatan sistem untuk memberikan pengalaman perjalanan terbaik bagi Anda. Kami akan segera kembali!</p>
+        
+        <a href="https://wa.me/6281510044102?text=Halo%20Admin%20Travel,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Anda." class="cta-button">
+            Tanya Kami di WhatsApp
+        </a>
+    </div>
+
+</body>
+</html>
